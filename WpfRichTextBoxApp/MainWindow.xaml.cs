@@ -56,7 +56,16 @@ namespace WpfRichTextBoxApp
 
         private void Bold_Click(object sender, RoutedEventArgs e)
         {
-
+            richText.Selection.ApplyPropertyValue(FontWeightProperty, FontWeights.Bold);
+            //richText.Selection.ApplyPropertyValue(FontWeightProperty, "Bold");
         }
+
+        private void Size_Click(object sender, RoutedEventArgs e)
+        {
+            richText.Selection.ApplyPropertyValue(FontSizeProperty, "26");
+
+            richText.Selection.ApplyPropertyValue(ForegroundProperty, "Red");
+        }
+        
     }
 }

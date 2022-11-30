@@ -21,6 +21,7 @@
         </Grid.RowDefinitions>
         <ToolBar>
             <Button Content="Bold" Click="Bold_Click" />
+            <Button Content="26px" Click="Size_Click"/>
         </ToolBar>
         <RichTextBox Grid.Row="1" x:Name="richText" />
         <StackPanel Grid.Row="2" 
